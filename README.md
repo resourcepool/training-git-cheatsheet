@@ -92,6 +92,8 @@ or
 >`$ git push origin localbranch:remotebranch`  
 or if both branches have the same name:  
 >`$ git push origin branch .`  
+use `-f` to force the update (WARNING: will override the remote branch with yours)
+>`$ git push origin -f branch`  
 
 (T) Create an annoted tag on a commit:
 >`$ git tag -a tag_name sha_of_commit -m "tag for version vX.X"`  
