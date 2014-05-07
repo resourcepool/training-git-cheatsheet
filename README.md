@@ -101,9 +101,17 @@ use `-f` to force the update (WARNING: will override the remote branch with your
 (T) Create a lightweight tag on a commit:
 >`$ git tag tag_name sha_of_commit`  
 
-(<) Get last version of branches from the origin repo:
+(<) Get latest version of branches from the origin repo:
 >`$ git fetch origin`  
 
+(<) Get latest version of branches from the origin repo, including removed branches
+>`$ git fetch -p origin`  
+
+(<) Get latest version of master branch from the origin repo, and merge it into current branch
+>`$ git pull origin master`  
+
+(<) Get latest version of master branch from the origin repo, rebase your current branch on top of it
+>`$ git pull --rebase origin master`  
 
 
 ###3.3. Index
